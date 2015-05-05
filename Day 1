@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Hello world</title>
+</head>
+<body>
+	<p>
+		Hey what's up. I love the internet.
+	</p>
+	
+	<p>
+		<h1>yay</h1>
+		<h2>YAY</h2>
+		<h3>yay!</h3>
+
+		yay
+		<strong>BOLD</strong>
+		<br />
+		<br />
+		<em>Emphasis</em>
+		<hr />  
+		WORDS WORDS WORDS
+
+	</p>
+	<p>
+		<p style="background-color: #B1B1B1">
+		lovely
+		</p>
+		<p style="background-color: red">
+		yay
+		</p>
+		<p style="background-color: #B1B1B1; font-size: 40px; color: white; border: 1px solid black">
+		big font
+		</p>
+		<p>
+		<img src="http://i.imgur.com/aCfJf0U.png" style="border-radius: 50%"/>
+		</p>
+	</p>
+
+</body>
+</html>
