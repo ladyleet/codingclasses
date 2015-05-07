@@ -24,3 +24,6 @@ background-color: green;
 #divThree:hover {
 	-webkit-animation: doCrazyStuff 10s infinite alternate;
 }
+.pinkfont {
+	color: rgb(255,20,147);
+}
