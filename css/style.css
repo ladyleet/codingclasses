@@ -1,29 +1,32 @@
 #birdKiss {
-	background-image: url(../images/birds%20kissing%20outer.png);
-	width: 350px;
-	height: 242px;
+background-image: url(../images/birds%20kissing%20outer.png);
+width: 350px;
+height: 242px;
 }
 #birdKiss:hover {
 background-image: url(../images/birds%20kissing.png);
 width: 350px;
 height: 242px;
 }
-#divTwo{
-width: 100px;
-height: 100px;
-background-color: green;
-}
-#divTwo:hover{
--webkit-animation: doStuff 7s;
-}
-
-@-webkit-keyframes doStuff {
-0% {background-color:white;}
-25% {background-color:red;}
-}
-#divThree:hover {
-	-webkit-animation: doCrazyStuff 10s infinite alternate;
-}
 .pinkfont {
-	color: rgb(255,20,147);
+color: rgb(255,20,147);
+}
+@-webkit-keyframes cloverMoves {
+25% {-webkit-transform: rotate(-75deg);}
+50% {-webkit-transform: rotate(75deg);}
+75% {-webkit-transform: rotate(-75deg);}
+100% {-webkit-transform: rotate(0deg);}
+}
+.clover:hover {
+-webkit-animation: cloverMoves 3.5s;
+}
+.clover {
+	height: 1px;
+	padding-left: 700px;
+}
+.clover .text{
+visibility: hidden;
+}
+.clover:hover .text{
+visibility: visible;
 }
