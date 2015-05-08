@@ -22,7 +22,9 @@ color: rgb(255,20,147);
 }
 .clover {
 	height: 1px;
-	padding-left: 700px;
+	width: 150px;
+	position: relative;
+	left: 700px;
 }
 .clover .text{
 visibility: hidden;
