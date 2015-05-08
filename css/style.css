@@ -25,6 +25,7 @@ color: rgb(255,20,147);
 	width: 150px;
 	position: relative;
 	left: 700px;
+	text-align: center;
 }
 .clover .text{
 visibility: hidden;
