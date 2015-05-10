@@ -2,11 +2,13 @@
 background-image: url(../images/birds%20kissing%20outer.png);
 width: 350px;
 height: 242px;
+margin-top: 50px;
 }
 #birdKiss:hover {
 background-image: url(../images/birds%20kissing.png);
 width: 350px;
 height: 242px;
+margin-top: 50px;
 }
 .pinkfont {
 color: rgb(255,20,147);
@@ -24,7 +26,7 @@ color: rgb(255,20,147);
 height: 1px;
 width: 150px;
 position: relative;
-left: 700px;
+left: 400px;
 text-align: center;
 }
 .clover .text{
@@ -67,4 +69,36 @@ text-align: center;
 text-decoration: none;
 /* shadow */
 text-shadow: 0 0 5px #444;
+}
+.white {
+background-color: rgba(255,255,255,0.7);
+}
+.paddingborder {
+padding:30px;
+}
+.jumbotronstyle {
+background: url(http://android-foundry.com/wp-content/uploads/031713_Android_SaintPatricksDay-Wallpaper.jpg);
+height: 500px;
+}
+.styledaycols < div{
+background: url(http://android-foundry.com/wp-content/uploads/031713_Android_SaintPatricksDay-Wallpaper.jpg);
+text-align: center;
+}
+body{
+font-family: 'Roboto', sans-serif;
+}
+.hoverred:hover {border: 2px solid red;
+}
+.hoverorange:hover {border: 2px solid orange;
+}
+.hoveryellow:hover {border: 2px solid yellow;
+}
+.hovergreen:hover {border: 2px solid green;
+}
+.hoverblue:hover {border: 2px solid blue;
+}
+.hoverpurple:hover {border: 2px solid purple;
+}
+.paddingcol {
+	padding: 5px;
 }
