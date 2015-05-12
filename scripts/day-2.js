@@ -154,6 +154,7 @@ console.log(yesno);
 if (firstNameAnswer === "yes" && birthdayAnswer === "yes" && cakeAnswer === "yes")
 {
 	alert("yay!");
+	window.location ="http://stackoverflow.com";
 }
 else if (firstNameAnswer === "no")
 {
