@@ -81,6 +81,56 @@ switch(input.toLowerCase()){
 // var user3 = prompt("number 2");
 // alert(parseInt(user2) + parseInt(user3) +"!");
 
+// day 2
+
+// variable declaration
+var x;
+
+variable initialization of x
+variable assignment the value of 5 to x
+x=5;
+
+// variable declaration with initialization
+var z = "words";
+
+// plus operator
+var sum = 9 + 6;
+
+// minus operator
+var difference = 23 - 9;
+
+// product operator
+var product = 4 * 6;
+
+// divisor operator
+var quotient = 9 / 3; 
+
+// modulo or modulus operator
+// remainder should be non-negative integer
+var remainder = 15 % 3;
+
+// increment operator */
+var increment = 0;
+increement = increment++;
+
+// equal to:
+increment = increment + 1;
+increment = ++increment; //1
+
+// decrement operator
+var decrement = 0;
+decrement = decrement --;
+
+// equal to
+decrement = decrement - 1;
+decrement -= 1;
+decrement--;
+
+var parentheses = (9 + 2) * 7;
+
+
+
+
 
 
 
