@@ -100,5 +100,28 @@ font-family: 'Roboto', sans-serif;
 .hoverpurple:hover {border: 2px solid purple;
 }
 .paddingcol {
-	padding: 5px;
+padding: 5px;
 }
+/*BEGIN BALLS*/
+.circle{
+display: block;
+position:absolute;
+background:red;
+padding:0px;
+margin:0px;
+}
+#ground {
+height:1000px;
+width:100%;
+position:relative;
+padding:0;
+}
+</style>
+/*END BALLS*/
+
+
+
+
+
+
+

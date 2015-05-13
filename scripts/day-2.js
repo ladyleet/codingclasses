@@ -133,20 +133,22 @@
 // inputArray.push(input2);
 // get user information and add all the information to an array. then, print out a popup window relaying back the info.
 
-window.onload = function(){
+$(document).ready(function(){
 var answer = prompt("Do you like dogs, cats, or birds?");
 
-if (answer === "Dogs" || answer === "dogs" || answer === "dog" || answer === "dogs")
+// if (answer.toLowerCase() === ("dogs" || "dog" || "doggies" || "doggy"));
+if (["dog", "doggies", "doggy", "puppy", "dogs"].indexOf(answer.toLowerCase()) >=0)
 {
 alert("We love dogs too! Here is a cute dog picture!");
 window.location ="http://images2.fanpop.com/image/photos/13200000/Cute-Dog-dogs-13286656-1024-768.jpg";
 }
-else if (answer === "Cats" || answer === "cats" || answer === "cat" || answer === "Cats")
+// else if (answer.toLowerCase() === ("cats" || "cat" || "kitties" || "kitty"))
+else if (["cat", "cats", "kitty", "kitties", "kittens"].indexOf(answer.toLowerCase()) >=0)
 {
 alert("We love kitties too! Here is a cute cat picture!");
 window.location ="http://cdn2.hellogiggles.com/wp-content/uploads/2014/07/22/you-popular-cute-cat-the-very-creative_113506.jpg";
 }
-else if (answer === "Birds" || answer === "birds" || answer === "bird" || answer === "Bird")
+else if (["birds","bird", "birdies"].indexOf(answer.toLowerCase()) >=0 ) 	
 {
 alert("We love birdies too! Here is a cute bird picture!");
 window.location ="http://www.pageresource.com/wallpapers/wallpaper/yellow-bird_652771.jpg";
@@ -155,4 +157,4 @@ else {
 alert("We can't figure out what you like, so you're getting them all!");
 window.location ="http://cdn.animals-pics.com/pictures/www.emergency-pac.com/site/wp-content/uploads/2011/10/german-shepard.png";
 }
-}
+});
