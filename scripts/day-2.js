@@ -104,13 +104,10 @@
 // }
 // else {
 // display = i;
-
 // }
 // console.log(display);
 // }
-
-// // 
-
+// //
 // var arr = [4, "words", true, console.log];
 // var input = prompt("input info");
 // var b = "strawberries";
@@ -119,61 +116,42 @@
 // // arr.shift();
 // // arr.unshift(b);
 // console.log(arr);
-
 // // var copy = arr.slice(0,3);
 // // console.log(copy);
-
 // var removethings = arr.splice(1,0, "THESE THINGS");
 // console.log(arr);
-
-// // 
+// //
 // var input1 = prompt
 // var inputArray1 = [];
 // // add to array
-
 // var input2 = prompt ("take more user input");
 // var inputArray2 = [];
 // // remove last entry
 // inputArray2.pop();
 // // add to array
 // inputArray.push(input2);
-
 // get user information and add all the information to an array. then, print out a popup window relaying back the info.
 
-var firstName = prompt("What is your first name?");
-var birthday = prompt("What is your birthday?");
-var cake = prompt("What is your fave cake?");
-var answers = [firstName, birthday, cake];
-console.log(answers);
-alert("Thanks for giving us your info! Now, please confirm. Note, you *must* say lowercase yes or no to each answer.");
-var firstNameAnswer = prompt("Is your first name " +firstName +" ?");
-var birthdayAnswer = prompt("Is your birthday " +birthday +" ?");
-var cakeAnswer = prompt("Is your fave cake "+cake+" ?");
-var yesno = [firstNameAnswer, birthdayAnswer, cakeAnswer];
-console.log(yesno);
-if (firstNameAnswer === "yes" && birthdayAnswer === "yes" && cakeAnswer === "yes")
+window.onload = function(){
+var answer = prompt("Do you like dogs, cats, or birds?");
+
+if (answer === "Dogs" || answer === "dogs" || answer === "dog" || answer === "dogs")
 {
-	alert("yay!");
-	window.location ="http://stackoverflow.com";
+alert("We love dogs too! Here is a cute dog picture!");
+window.location ="http://images2.fanpop.com/image/photos/13200000/Cute-Dog-dogs-13286656-1024-768.jpg";
 }
-else if (firstNameAnswer === "no")
+else if (answer === "Cats" || answer === "cats" || answer === "cat" || answer === "Cats")
 {
-	alert("boo");
+alert("We love kitties too! Here is a cute cat picture!");
+window.location ="http://cdn2.hellogiggles.com/wp-content/uploads/2014/07/22/you-popular-cute-cat-the-very-creative_113506.jpg";
+}
+else if (answer === "Birds" || answer === "birds" || answer === "bird" || answer === "Bird")
+{
+alert("We love birdies too! Here is a cute bird picture!");
+window.location ="http://www.pageresource.com/wallpapers/wallpaper/yellow-bird_652771.jpg";
 }
 else {
-	alert("try again");
+alert("We can't figure out what you like, so you're getting them all!");
+window.location ="http://cdn.animals-pics.com/pictures/www.emergency-pac.com/site/wp-content/uploads/2011/10/german-shepard.png";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
