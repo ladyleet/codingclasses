@@ -72,7 +72,8 @@
 // else {
 // console.log(i);
 // }
-// the right way
+
+// // the right way
 // var display = [];
 // for(var i = 0; i <= 100; i++)
 // if (i%3 === 0 && i%5 === 0){
