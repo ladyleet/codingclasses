@@ -133,7 +133,7 @@
 // inputArray.push(input2);
 // get user information and add all the information to an array. then, print out a popup window relaying back the info.
 
-$(document).ready(function(){
+window.onload = function(){
 var answer = prompt("Do you like dogs, cats, or birds?");
 
 // if (answer.toLowerCase() === ("dogs" || "dog" || "doggies" || "doggy"));
@@ -157,4 +157,4 @@ else {
 alert("We can't figure out what you like, so you're getting them all!");
 window.location ="http://cdn.animals-pics.com/pictures/www.emergency-pac.com/site/wp-content/uploads/2011/10/german-shepard.png";
 }
-});
+};
