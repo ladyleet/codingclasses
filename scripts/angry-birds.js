@@ -9,21 +9,28 @@ function randomXToY(minVal,maxVal,floatVal)
 Ball = (function() {
   
   // constructor
-  function Ball(x,y,radius,color){
+  function Ball(x,y,radius,color,img, ht){
     this.center = {x:x, y:y};  
     this.radius = radius;               
     this.color = color;
+    this.img = img;
+    this.ht = ht;
     this.dx = 2;               
     this.dy = 2;        
     this.boundaryHeight = $('#ground').height();
     this.boundaryWidth = $('#ground').width();
 
-    this.dom  = $('<p class="circle"></p>').appendTo('#ground');
+    this.dom  = $('<img class="circle"/>').appendTo('#ground');
     
+    // If this.ht is truthy
+    //  set a "height" attribute on the img we just create above, with a value equal to "this.ht"
+    if(this.ht){
+      this.dom.attr('height', this.ht);
+    }
+
     // the rectange div a circle
-    this.dom.width(radius*2);
-    this.dom.height(radius*2);
-    this.dom.css({'border-radius':radius,background:color});
+    this.dom.attr('src', this.img);
+    
          
     this.placeAtCenter(x,y);         
   }
@@ -62,17 +69,26 @@ Ball = (function() {
   return Ball;
 })();
 
-var number_of_balls = 15;
+var IMAGES = [
+  {img: 'images/angrybluebird.png', radius: 75, ht: 100},
+  {img: 'images/angrygreenbird.png', radius: 38, ht: 100},
+  {img: 'images/angryredbird.png', radius: 53, ht: 100},
+  {img: 'images/angrywhitebird.png', radius: 25, ht: 100},
+  {img: 'images/therealmarvin.png', radius: 40, ht: 300}
+];
+
+//var number_of_balls = 3;
 var  balls = [];   
                
 $('document').ready(function(){
-  for (i = 0; i < number_of_balls; i++) { 
+  for (i = 0; i < IMAGES.length; i++) { 
     var boundaryHeight = $('#ground').height();
     var boundaryWidth = $('#ground').width();
     var y = randomXToY(30,boundaryHeight - 50);
     var x = randomXToY(30,boundaryWidth - 50);
-    var radius = randomXToY(15,30);
-    balls.push(new Ball(x,y,radius, '#'+Math.floor(Math.random()*16777215).toString(16))); 
+    // var radius = randomXToY(15,30);
+    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    balls.push(new Ball(x,y,IMAGES[i].radius, randomColor, IMAGES[i].img, IMAGES[i].ht)); 
   }
   loop(); 
 });
