@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Email Validation</title>
+	</head>
+	<body>
+		<center>
+		<form name = "form" style = "padding: 200px">
+				<div style = "padding: 20px">
+					<input type="string" placeholder="Enter your email!" name="email" />
+				</div>
+				<div style = "padding: 20px">
+				<input type="button" value="Check to see if email is valid" onclick="validateEmail(this.form)"/>
+				</div>
+				<div style = "padding: 20px">
+				<input name="displayResults" placeholder="This will tell you if it is a valid email." size="45"/>
+				</div>
+			</form>
+			</center>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="scripts/emailvalidation.js"></script>
+	</body>
+</html>
+
+

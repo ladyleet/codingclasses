@@ -1,3 +1,4 @@
+function demo(){
 // // month
 var monthInput = prompt("What is your birthday month? Please type out the entire month. Example: January");
 
@@ -31,7 +32,14 @@ else {
 };
 
 //entire
-alert("Your birthday is "+monthInput+" "+dateInput+", "+yearInput+"!")
+alert("Your birthday is "+monthInput+" "+dateInput+", "+yearInput+"!");	
+}
+
+// function expression
+var example = function(){
+	alert("hello");
+}
+
 
 // how do you loop a person back if they don't get it?
 //how do you not print out if answers to all 3 (one of them are wrong)?
